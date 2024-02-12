@@ -1,113 +1,212 @@
 import Image from "next/image";
+import {
+  DiscordIcon,
+  GitHubIcon,
+  InstagramIcon,
+  SendIcon,
+  TwitterIcon,
+} from "./icons/icons";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <>
+      {/* Section 1 */}
+      <section className="max-w-[1800px] mx-auto">
+        <nav className="mt-20">
+          <ul className="flex items-center justify-evenly gap-5">
+            <li className="">
+              <a href="#home">HOME</a>
+            </li>
+            <li className="">
+              <a href="#project">Project</a>
+            </li>
+            <li className="">
+              <a href="#skill">Skill</a>
+            </li>
+            <button className="p-5 border-2 rounded-2xl active:translate-x-2 active:translate-y-2 hover:translate-x-1 hover:translate-y-1">
+              <a href="#resume.pdf" target="_blank">
+                Resume
+              </a>
+            </button>
+          </ul>
+        </nav>
+        <div className="grid grid-cols-2 gap-5 mt-20">
+          <div className="mt-40">
+            <div className="p-2">
+              <div className="p-2 flex gap-5">
+                <div className="w-[70px] h-20">
+                  <img src="/images/fotoff.jpeg" />
+                </div>
+                <div className="">
+                  <h4 className="font-bold text-2xl">HII GUYSSS!!!!!!!</h4>
+                  <p className="mt-2 text-xl font-semibold">
+                    Nama saya Fuad Farchan
+                  </p>
+                  <p className="text-xl font-semibold">
+                    Saya adalah seorang{" "}
+                    <span className="bg-gradient-to-r from-blue-600 to-red-700 bg-clip-text text-transparent">
+                      FontEnd Developer Pemula
+                    </span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="mt-10">
+              <button className="p-2 border-2 rounded-xl pencet">
+                Contact ME
+              </button>
+            </div>
+          </div>
+          <div className="">
+            <img className="" src="/images/sapiens.svg" />
+          </div>
         </div>
-      </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-full sm:before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full sm:after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
+      </section>
+      {/* Section 2 */}
+      <section className="max-w-[1800px] mx-auto bg-slate-100">
+        <div className="">
+          <h3 className="p-3 text-xl">--MY WORKS</h3>
+        </div>
+        <div className="px-3">
+          <h1 className="text-3xl font-plusjak font-semibold ">PROJECT ME</h1>
+        </div>
+        {/* Project 1 */}
+        <div className="grid grid-cols-3 gap-5 mt-5">
+          <div className="p-5 border-4 rounded-xl border-black">
+            <img className="mt-2" src="/images/project 1.jpeg" />
+            <div className="grid grid-rows-2 mt-5">
+              <div className="flex gap-72">
+                <h3 className="text-xl font-bold ">E-commerce Website</h3>
+                <a href="/">
+                  <SendIcon />
+                </a>
+              </div>
+            </div>
+            <div className="grid grid-cols-2">
+              <div className="flex gap-5">
+                <div className="p-2 border-2 rounded-xl">HTML</div>
+                <div className="p-2 border-2 rounded-xl">CSS</div>
+              </div>
+            </div>
+            <p className="mt-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consequuntur aliquid provident molestiae quas esse perferendis
+              doloremque quibusdam magni architecto magnam.
+            </p>
+          </div>
+          {/* Project 2 */}
+          <div className="p-5 border-4 rounded-xl border-black">
+            <img className="mt-2" src="/images/project 2.jpeg" />
+            <div className="grid grid-rows-2 mt-5">
+              <div className="flex gap-[370px]">
+                <h3 className="text-xl font-bold ">Landing Page</h3>
+                <a href="/">
+                  <SendIcon />
+                </a>
+              </div>
+            </div>
+            <div className="grid grid-cols-2">
+              <div className="flex gap-5">
+                <div className="p-2 border-2 rounded-xl">React</div>
+                <div className="p-2 border-2 rounded-xl">Tailwind</div>
+              </div>
+            </div>
+            <p className="mt-2">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consequuntur aliquid provident molestiae quas esse perferendis
+              doloremque quibusdam magni architecto magnam.
+            </p>
+          </div>
+          {/* Project 3 */}
+          <div className="p-5 border-4 rounded-xl border-black">
+            <img className="mt-2" src="/images/project 3.jpeg" />
+            <div className="grid grid-rows-2 mt-5">
+              <div className="flex gap-80">
+                <h3 className="text-xl font-bold ">Portofolio Website</h3>
+                <a href="/">
+                  <SendIcon />
+                </a>
+              </div>
+            </div>
+            <div className="grid grid-cols-2">
+              <div className="flex gap-5">
+                <div className="p-2 border-2 rounded-xl">React</div>
+                <div className="p-2 border-2 rounded-xl">Tailwind</div>
+              </div>
+            </div>
+            <p className="mt-2 font-plusjak">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Consequuntur aliquid provident molestiae quas esse perferendis
+              doloremque quibusdam magni architecto magnam.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section className="max-w-[1800px] mx-auto h-screen mt-10">
+        <div className="p-3">
+          <h4 className="text-xl font-plusjak font-normal">Learning Path</h4>
+          <p className="text-2xl font-plusjak font-semibold">
+            Skill & Education
           </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50 text-balance`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+        </div>
+      </section>
+      <section className="max-w-[1800px] mx-auto h-screen">
+        <div className="">Contact ME</div>
+        <div className="grid grid-cols-2 gap-5">
+          <div className="">
+            <form className="grid grid-rows-1 gap-5">
+              <div className="">
+                <label></label>
+                <input
+                  className="ml-2 pb-5 pr-[300px] border-2 border-slate-900"
+                  type="text"
+                  name="Name"
+                  placeholder="Name..."
+                />
+              </div>
+              <div className="">
+                <label></label>
+                <input
+                  className="ml-2 pb-5 pr-[300px] border-2 border-slate-900 "
+                  type="text"
+                  name="Name"
+                  placeholder="Name..."
+                />
+              </div>
+              <div className="">
+                <label></label>
+                <textarea
+                  className="ml-2 pb-[300px] pr-[320px] border-2 border-slate-900 "
+                  name="biografi"
+                  placeholder="Name..."
+                ></textarea>
+              </div>
+              <a href="/buttons/6" className="ml-2 send">
+                Button
+              </a>
+            </form>
+          </div>
+          <div className="">
+            <p className="">Check Out my:</p>
+            <div className="mt-5 main">
+              <div className="up">
+                <button className="card1">
+                  <GitHubIcon />
+                </button>
+                <button className="card2">
+                  <DiscordIcon />
+                </button>
+                <button className="card3 mt-[100px] ml-[-195px]">
+                  <TwitterIcon />
+                </button>
+                <button className="card4 mt-[100px] ml-[2px]">
+                  <TwitterIcon />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   );
 }
