@@ -194,38 +194,42 @@ export default function Home() {
           </div>
           {/* Posisi Kiri */}
           <div className="">
-            <p className="">Check Out my:</p>
-            <div className="mt-5 main">
-              <div className="up">
-                <button className="card1">
-                  <InstagramIcon />
-                </button>
-                <button className="card2">
-                  <TwitterIcon />
-                </button>
-                <button className="card3 mt-[100px] ml-[-195px]">
-                  <GitHubIcon />
-                </button>
-                <button className="card4 mt-[100px] ml-[2px]">
-                  <DiscordIcon />
-                </button>
+            <div className="flex items-center gap-8">
+              <p className="">Check Out my:</p>
+              <div className="mt-5 main">
+                <div className="up">
+                  <button className="card1">
+                    <InstagramIcon />
+                  </button>
+                  <button className="card2">
+                    <TwitterIcon />
+                  </button>
+                  <button className="card3 mt-[100px] ml-[-195px]">
+                    <GitHubIcon />
+                  </button>
+                  <button className="card4 mt-[100px] ml-[2px]">
+                    <DiscordIcon />
+                  </button>
+                </div>
               </div>
             </div>
-            <div className="">
-              <div className="mt-20">
-                <LocIcon />
-                <h3 className="">Alamat</h3>
-                <p className="">Jl Rambutan V no.6</p>
-              </div>
-              <div className="mt-10">
-                <PhoneIcon />
-                <h3 className="">Phone</h3>
-                <p className="">(021)123456</p>
-              </div>
-              <div className="mt-10">
-                <EmailIcon />
-                <h3 className="">Email</h3>
-                <p className="">fuadfarchan272gmail.com</p>
+            <div>
+              <div className="">
+                <div className="mt-20">
+                  <LocIcon />
+                  <h3 className="">Alamat</h3>
+                  <p className="">Jl Rambutan V no.6</p>
+                </div>
+                <div className="mt-10">
+                  <PhoneIcon />
+                  <h3 className="">Phone</h3>
+                  <p className="">(021)123456</p>
+                </div>
+                <div className="mt-10">
+                  <EmailIcon />
+                  <h3 className="">Email</h3>
+                  <p className="">fuadfarchan272gmail.com</p>
+                </div>
               </div>
             </div>
           </div>
