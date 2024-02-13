@@ -12,28 +12,29 @@ import {
 
 export default function Home() {
   return (
-    <>
+    <div>
+      <nav className="mt-20 max-w-5xl mx-auto">
+        <ul className="flex items-center justify-between ">
+          <li className="">
+            <a href="#home">HOME</a>
+          </li>
+          <li className="">
+            <a href="#project">Project</a>
+          </li>
+          <li className="">
+            <a href="#skill">Skill</a>
+          </li>
+          <button className="p-5 border-2 rounded-2xl active:translate-x-2 active:translate-y-2 hover:translate-x-1 hover:translate-y-1 transition">
+            <a href="#resume.pdf" target="_blank">
+              Resume
+            </a>
+          </button>
+        </ul>
+      </nav>
+
       {/* Section 1 */}
-      <section className="max-w-[1800px] mx-auto">
-        <nav className="mt-20">
-          <ul className="flex items-center justify-evenly gap-5">
-            <li className="">
-              <a href="#home">HOME</a>
-            </li>
-            <li className="">
-              <a href="#project">Project</a>
-            </li>
-            <li className="">
-              <a href="#skill">Skill</a>
-            </li>
-            <button className="p-5 border-2 rounded-2xl active:translate-x-2 active:translate-y-2 hover:translate-x-1 hover:translate-y-1">
-              <a href="#resume.pdf" target="_blank">
-                Resume
-              </a>
-            </button>
-          </ul>
-        </nav>
-        <div className="grid grid-cols-2 gap-5 mt-20">
+      <section className="pb-40">
+        <div className="max-w-5xl mx-auto grid grid-cols-2 gap-5 mt-20">
           <div className="mt-40">
             <div className="p-2">
               <div className="p-2 flex gap-5">
@@ -55,9 +56,9 @@ export default function Home() {
               </div>
             </div>
             <div className="mt-10">
-              <button className="p-2 border-2 rounded-xl pencet">
+              <a href="#contact-me" className="p-2 border-2 rounded-xl pencet">
                 Contact ME
-              </button>
+              </a>
             </div>
           </div>
           <div className="">
@@ -65,20 +66,20 @@ export default function Home() {
           </div>
         </div>
       </section>
+
       {/* Section 2 */}
-      <section className="max-w-[1800px] mx-auto bg-slate-100">
-        <div className="">
-          <h3 className="p-3 text-xl">--MY WORKS</h3>
-        </div>
-        <div className="px-3">
-          <h1 className="text-3xl font-plusjak font-semibold ">PROJECT ME</h1>
-        </div>
-        {/* Project 1 */}
-        <div className="grid grid-cols-3 gap-5 mt-5">
+      <section className=" bg-slate-100 py-40">
+        <h1 className="text-center text-3xl font-plusjak font-semibold">
+          MY PROJECT
+        </h1>
+
+        {/* Grid */}
+        <div className="mx-auto max-w-screen-2xl grid grid-cols-3 gap-5 mt-10">
+          {/* Project 1 */}
           <div className="p-5 border-4 rounded-xl border-black">
             <img className="mt-2" src="/images/project 1.jpeg" />
             <div className="grid grid-rows-2 mt-5">
-              <div className="flex gap-72">
+              <div className="flex justify-between">
                 <h3 className="text-xl font-bold ">E-commerce Website</h3>
                 <a href="/">
                   <SendIcon />
@@ -101,7 +102,7 @@ export default function Home() {
           <div className="p-5 border-4 rounded-xl border-black">
             <img className="mt-2" src="/images/project 2.jpeg" />
             <div className="grid grid-rows-2 mt-5">
-              <div className="flex gap-[370px]">
+              <div className="flex justify-between">
                 <h3 className="text-xl font-bold ">Landing Page</h3>
                 <a href="/">
                   <SendIcon />
@@ -124,7 +125,7 @@ export default function Home() {
           <div className="p-5 border-4 rounded-xl border-black">
             <img className="mt-2" src="/images/project 3.jpeg" />
             <div className="grid grid-rows-2 mt-5">
-              <div className="flex gap-80">
+              <div className="flex justify-between">
                 <h3 className="text-xl font-bold ">Portofolio Website</h3>
                 <a href="/">
                   <SendIcon />
@@ -145,7 +146,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      <section className="max-w-[1800px] mx-auto h-screen mt-10">
+
+      {/* Section 3 */}
+      <section className="max-w-5xl mx-auto py-60">
         <div className="p-3">
           <h4 className="text-xl font-plusjak font-normal">Learning Path</h4>
           <p className="text-2xl font-plusjak font-semibold">
@@ -155,86 +158,97 @@ export default function Home() {
         <div className="w-1 h-80 border-2 bg-black border-black"></div>
         <div className="w-15 h-15 bg-red-400 rounded-full"></div>
       </section>
-      <section className="max-w-[1800px] mx-auto h-screen bg-slate-500">
-        {/* Posisi Kanan */}
-        <div className="">Contact ME</div>
-        <div className="grid grid-cols-2 gap-5">
-          <div className="">
-            <form className="grid grid-rows-1 gap-5">
-              <div className="">
-                <label></label>
-                <input
-                  className="ml-2 pb-5 pr-[300px] border-2 border-slate-900"
-                  type="text"
-                  name="Name"
-                  placeholder="Name..."
-                />
+
+      <div className="bg-slate-500 py-40">
+        {/* Section 4 */}
+        <section className="max-w-5xl mx-auto">
+          {/* Posisi Kanan */}
+          <h4 id="contact-me" className="text-3xl">
+            Contact ME
+          </h4>
+          <div className="mt-10 grid grid-cols-2 gap-5">
+            <div className="">
+              <form className="grid grid-rows-1 gap-5 ml-2">
+                <div className="">
+                  <label></label>
+                  <input
+                    className="p-2 border-2 rounded-lg border-slate-900 w-full"
+                    type="text"
+                    name="Name"
+                    placeholder="Name..."
+                  />
+                </div>
+                <div className="">
+                  <label></label>
+                  <input
+                    className="p-2 border-2 rounded-lg border-slate-900 w-full"
+                    type="text"
+                    name="Name"
+                    placeholder="Name..."
+                  />
+                </div>
+                <div className="">
+                  <label></label>
+                  <textarea
+                    className="p-2 rounded-lg border-2 border-slate-900 w-full h-[200px]"
+                    name="biografi"
+                    placeholder="Name..."
+                  ></textarea>
+                </div>
+                <a href="/buttons/6" className="send">
+                  Button
+                </a>
+              </form>
+            </div>
+            {/* Posisi Kiri */}
+            <div className="">
+              <div className="flex items-center gap-8">
+                <p className="">Check Out my:</p>
+                <div className="mt-5 main">
+                  <div className="up">
+                    <button className="card1">
+                      <InstagramIcon />
+                    </button>
+                    <button className="card2">
+                      <TwitterIcon />
+                    </button>
+                    <button className="card3 mt-[100px] ml-[-195px]">
+                      <GitHubIcon />
+                    </button>
+                    <a
+                      href="https://discordapp.com/users/Bendol#3609"
+                      target="_blank"
+                    >
+                      <button className="card4 mt-[100px] ml-[2px]">
+                        <DiscordIcon />
+                      </button>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div className="">
-                <label></label>
-                <input
-                  className="ml-2 pb-5 pr-[300px] border-2 border-slate-900 "
-                  type="text"
-                  name="Name"
-                  placeholder="Name..."
-                />
-              </div>
-              <div className="">
-                <label></label>
-                <textarea
-                  className="ml-2 pb-[300px] pr-[320px] border-2 border-slate-900 "
-                  name="biografi"
-                  placeholder="Name..."
-                ></textarea>
-              </div>
-              <a href="/buttons/6" className="ml-2 send">
-                Button
-              </a>
-            </form>
-          </div>
-          {/* Posisi Kiri */}
-          <div className="">
-            <div className="flex items-center gap-8">
-              <p className="">Check Out my:</p>
-              <div className="mt-5 main">
-                <div className="up">
-                  <button className="card1">
-                    <InstagramIcon />
-                  </button>
-                  <button className="card2">
-                    <TwitterIcon />
-                  </button>
-                  <button className="card3 mt-[100px] ml-[-195px]">
-                    <GitHubIcon />
-                  </button>
-                  <button className="card4 mt-[100px] ml-[2px]">
-                    <DiscordIcon />
-                  </button>
+              <div>
+                <div className="">
+                  <div className="mt-20">
+                    <LocIcon />
+                    <h3 className="">Alamat</h3>
+                    <p className="">Jl Rambutan V no.6</p>
+                  </div>
+                  <div className="mt-10">
+                    <PhoneIcon />
+                    <h3 className="">Phone</h3>
+                    <p className="">(021)123456</p>
+                  </div>
+                  <div className="mt-10">
+                    <EmailIcon />
+                    <h3 className="">Email</h3>
+                    <p className="">fuadfarchan272gmail.com</p>
+                  </div>
                 </div>
               </div>
             </div>
-            <div>
-              <div className="">
-                <div className="mt-20">
-                  <LocIcon />
-                  <h3 className="">Alamat</h3>
-                  <p className="">Jl Rambutan V no.6</p>
-                </div>
-                <div className="mt-10">
-                  <PhoneIcon />
-                  <h3 className="">Phone</h3>
-                  <p className="">(021)123456</p>
-                </div>
-                <div className="mt-10">
-                  <EmailIcon />
-                  <h3 className="">Email</h3>
-                  <p className="">fuadfarchan272gmail.com</p>
-                </div>
-              </div>
-            </div>
           </div>
-        </div>
-      </section>
-    </>
+        </section>
+      </div>
+    </div>
   );
 }
