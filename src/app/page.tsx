@@ -34,10 +34,10 @@ export default function Home() {
 
       {/* Section 1 */}
       <section className="pb-40">
-        <div className="max-w-5xl mx-auto grid grid-cols-2 gap-5 mt-20">
+        <div className="max-w-5xl mx-auto md:grid-cols-2 lg:grid-cols-2 grid grid-cols-1 gap-5 mt-20">
           <div className="mt-40">
             <div className="p-2">
-              <div className="p-2 flex gap-5">
+              <div className="p-2 md:p-4 flex flex-col md:flex-row gap-5">
                 <div className="w-[70px] h-20">
                   <img src="/images/fotoff.jpeg" />
                 </div>
@@ -132,7 +132,7 @@ export default function Home() {
                 </a>
               </div>
             </div>
-            <div className="grid grid-cols-2">
+            <div className=" md:grid-cols-2 lg:grid-cols-2 grid grid-cols-1">
               <div className="flex gap-5">
                 <div className="p-2 border-2 rounded-xl">React</div>
                 <div className="p-2 border-2 rounded-xl">Tailwind</div>
