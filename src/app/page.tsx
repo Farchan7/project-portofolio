@@ -2,6 +2,7 @@ import Image from "next/image";
 import {
   DiscordIcon,
   EmailIcon,
+  FacebookIcon,
   GitHubIcon,
   InstagramIcon,
   LocIcon,
@@ -155,18 +156,27 @@ export default function Home() {
             Skill & Education
           </p>
         </div>
-        <div className="w-1 h-80 border-2 bg-black border-black"></div>
-        <div className="w-15 h-15 bg-red-400 rounded-full"></div>
+        <div className="terminal-loader">
+          <div className="terminal-header">
+            <div className="terminal-title">Status</div>
+            <div className="terminal-controls">
+              <div className="control close"></div>
+              <div className="control minimize"></div>
+              <div className="control maximize"></div>
+            </div>
+          </div>
+          <div className="text">Loading...</div>
+        </div>
       </section>
 
-      <div className="bg-gray-200 py-40">
+      <div className=" py-40">
         {/* Section 4 */}
         <section className="max-w-5xl mx-auto">
           {/* Posisi Kanan */}
           <h4 id="contact-me" className="text-3xl">
             Contact ME
           </h4>
-          <div className="mt-10 grid grid-cols-2 gap-5">
+          <div className="mt-10 md:p-2 md:grid-cols-2 lg:grid-cols-2 grid grid-cols-1 gap-5">
             <div className="">
               <form className="grid grid-rows-1 gap-5 ml-2">
                 <div className="">
@@ -184,7 +194,7 @@ export default function Home() {
                     className="p-2 border-2 rounded-lg border-slate-900 w-full"
                     type="text"
                     name="Name"
-                    placeholder="Name..."
+                    placeholder="Email..."
                   />
                 </div>
                 <div className="">
@@ -192,34 +202,52 @@ export default function Home() {
                   <textarea
                     className="p-2 rounded-lg border-2 border-slate-900 w-full h-[200px]"
                     name="biografi"
-                    placeholder="Name..."
+                    placeholder="Message..."
                   ></textarea>
                 </div>
-                <a href="/buttons/6" className="send">
-                  Button
-                </a>
+                <button className="send-btn">
+                  <span>SEND</span>
+                </button>
               </form>
             </div>
             {/* Posisi Kiri */}
             <div className="">
-              <div className="flex items-center gap-8">
+              <div className="p-2 md:p-2 flex items-center gap-8">
                 <p className="">Check Out my:</p>
                 <div className="mt-5 main">
                   <div className="up">
-                    <button className="card1">
-                      <InstagramIcon />
-                    </button>
-                    <button className="card2">
-                      <TwitterIcon />
-                    </button>
-                    <button className="card3 mt-[100px] ml-[-195px]">
-                      <GitHubIcon />
-                    </button>
+                    <a
+                      href="https://www.instagram.com/farchan.fuad/"
+                      target="_blank"
+                    >
+                      <button className="card1">
+                        <InstagramIcon />
+                      </button>
+                    </a>
+
+                    <a
+                      href="https://www.facebook.com/farchan.fuad.5/"
+                      target="_blank"
+                    >
+                      <button className="card2">
+                        <FacebookIcon />
+                      </button>
+                    </a>
+
+                    <a
+                      href="https://github.com/Farchan7/project-portofolio"
+                      target="_blank"
+                    >
+                      <button className="card3 ml-[-195px] mt-[100px]">
+                        <GitHubIcon />
+                      </button>
+                    </a>
+
                     <a
                       href="https://discordapp.com/users/Bendol#3609"
                       target="_blank"
                     >
-                      <button className="card4 mt-[100px] ml-[2px]">
+                      <button className="card4 ml-[-105px] mt-[100px]">
                         <DiscordIcon />
                       </button>
                     </a>
