@@ -74,7 +74,7 @@ export default function Home() {
         </h1>
 
         {/* Grid */}
-        <div className="mx-auto max-w-screen-2xl grid grid-cols-3 gap-5 mt-10">
+        <div className="mx-auto max-w-screen-2xl md:grid-cols-3 lg:grid-cols-3 grid grid-cols-1 gap-5 mt-10">
           {/* Project 1 */}
           <div className="p-5 border-4 rounded-xl border-black">
             <img className="mt-2" src="/images/project 1.jpeg" />
@@ -159,7 +159,7 @@ export default function Home() {
         <div className="w-15 h-15 bg-red-400 rounded-full"></div>
       </section>
 
-      <div className="bg-slate-500 py-40">
+      <div className="bg-gray-200 py-40">
         {/* Section 4 */}
         <section className="max-w-5xl mx-auto">
           {/* Posisi Kanan */}
