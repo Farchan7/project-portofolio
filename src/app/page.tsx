@@ -82,9 +82,10 @@ export default function Home() {
             <div className="grid grid-rows-2 mt-5">
               <div className="flex justify-between">
                 <h3 className="text-xl font-bold ">E-commerce Website</h3>
-                <a href="/">
+                <button className="shr">
                   <SendIcon />
-                </a>
+                  <span className="tooltip">share</span>
+                </button>
               </div>
             </div>
             <div className="grid grid-cols-2">
@@ -105,9 +106,10 @@ export default function Home() {
             <div className="grid grid-rows-2 mt-5">
               <div className="flex justify-between">
                 <h3 className="text-xl font-bold ">Landing Page</h3>
-                <a href="/">
+                <button className="shr">
                   <SendIcon />
-                </a>
+                  <span className="tooltip">share</span>
+                </button>
               </div>
             </div>
             <div className="grid grid-cols-2">
@@ -128,9 +130,10 @@ export default function Home() {
             <div className="grid grid-rows-2 mt-5">
               <div className="flex justify-between">
                 <h3 className="text-xl font-bold ">Portofolio Website</h3>
-                <a href="/">
+                <button className="shr">
                   <SendIcon />
-                </a>
+                  <span className="tooltip">share</span>
+                </button>
               </div>
             </div>
             <div className=" md:grid-cols-2 lg:grid-cols-2 grid grid-cols-1">
@@ -165,7 +168,7 @@ export default function Home() {
               <div className="control maximize"></div>
             </div>
           </div>
-          <div className="text">Loading...</div>
+          <div className="text">On Progress.....</div>
         </div>
       </section>
 

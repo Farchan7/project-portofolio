@@ -3,6 +3,7 @@ import { Fuzzy_Bubbles } from "next/font/google";
 export function SendIcon() {
   return (
     <svg
+      className="svgIcon"
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
