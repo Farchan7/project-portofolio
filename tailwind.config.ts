@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     fontFamily: {
       plusjak: ["PlusJakartaSans", "sans-serif"],
+      komo: ["KodeMono", "sans-serif"],
     },
     extend: {
       backgroundImage: {

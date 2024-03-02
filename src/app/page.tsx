@@ -10,6 +10,7 @@ import {
   SendIcon,
   TwitterIcon,
 } from "./icons/icons";
+import { calculateSizeAdjustValues } from "next/dist/server/font-utils";
 
 export default function Home() {
   return (
@@ -50,7 +51,7 @@ export default function Home() {
                   <p className="text-xl font-semibold">
                     Saya adalah seorang{" "}
                     <span className="bg-gradient-to-r from-blue-600 to-red-700 bg-clip-text text-transparent">
-                      FontEnd Developer Pemula
+                      Front END Developer Pemula
                     </span>
                   </p>
                 </div>
@@ -185,7 +186,7 @@ export default function Home() {
                 <div className="">
                   <label></label>
                   <input
-                    className="p-2 border-2 rounded-lg border-slate-900 w-full"
+                    className="p-2 rounded-lg border-2 border-slate-500 w-full"
                     type="text"
                     name="Name"
                     placeholder="Name..."
@@ -194,7 +195,7 @@ export default function Home() {
                 <div className="">
                   <label></label>
                   <input
-                    className="p-2 border-2 rounded-lg border-slate-900 w-full"
+                    className="p-2 rounded-lg border-2 border-slate-500 w-full"
                     type="text"
                     name="Name"
                     placeholder="Email..."
@@ -203,7 +204,7 @@ export default function Home() {
                 <div className="">
                   <label></label>
                   <textarea
-                    className="p-2 rounded-lg border-2 border-slate-900 w-full h-[200px]"
+                    className="p-2 resize-none rounded-lg border-2 border-slate-500 w-full h-[200px]"
                     name="biografi"
                     placeholder="Message..."
                   ></textarea>
@@ -214,10 +215,10 @@ export default function Home() {
               </form>
             </div>
             {/* Posisi Kiri */}
-            <div className="">
+            <div className="ml-16 ">
               <div className="p-2 md:p-2 flex items-center gap-8">
                 <p className="">Check Out my:</p>
-                <div className="mt-5 main">
+                <div className="main">
                   <div className="up">
                     <a
                       href="https://www.instagram.com/farchan.fuad/"
@@ -257,25 +258,43 @@ export default function Home() {
                   </div>
                 </div>
               </div>
-              <div>
-                <div className="">
-                  <div className="mt-20">
+              {/* ALAMAT */}
+              <div className="">
+                <div className="mt-20 flex gap-3">
+                  <div className="p-3 bg-slate-200 border-2 rounded-md ">
                     <LocIcon />
-                    <h3 className="">Alamat</h3>
-                    <p className="">Jl Rambutan V no.6</p>
                   </div>
-                  <div className="mt-10">
+                  <div className="">
+                    <h3 className="text-base font-bold font-komo">Alamat</h3>
+                    <p className="font-normal font-plusjak">
+                      Jl Rambutan V no.6
+                    </p>
+                  </div>
+                </div>
+                {/* PHONE */}
+                <div className="mt-10 flex gap-3">
+                  <div className="p-3 bg-slate-200 border-2 rounded-md ">
                     <PhoneIcon />
-                    <h3 className="">Phone</h3>
-                    <p className="">(021)123456</p>
                   </div>
-                  <div className="mt-10">
+                  <div className="">
+                    <h3 className="text-base font-bold font-komo">Phone</h3>
+                    <p className="font-normal font-plusjak">(021)123456</p>
+                  </div>
+                </div>
+                {/* EMAIL */}
+                <div className="mt-10 flex gap-3">
+                  <div className="p-3 bg-slate-200 border-2 rounded-md ">
                     <EmailIcon />
-                    <h3 className="">Email</h3>
-                    <p className="">fuadfarchan272gmail.com</p>
+                  </div>
+                  <div className="">
+                    <h3 className="text-base font-bold font-komo">Email</h3>
+                    <p className="font-normal font-plusjak">
+                      fuadfarchan27gmail.com
+                    </p>
                   </div>
                 </div>
               </div>
+              <div></div>
             </div>
           </div>
         </section>
